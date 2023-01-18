@@ -23,6 +23,9 @@ Namespace ManShop.Web.App_Start
 
         Private Sub ConfigAutofac(ByVal app As IAppBuilder)
             Dim builder = New ContainerBuilder()
+
+            builder.RegisterType(Of System.Object).AsSelf().InstancePerRequest()
+
             builder.RegisterControllers(Assembly.GetExecutingAssembly())
             builder.RegisterApiControllers(Assembly.GetExecutingAssembly())
             builder.RegisterType(Of UnitOfWork)().[As](Of IUnitOfWork)().InstancePerRequest()

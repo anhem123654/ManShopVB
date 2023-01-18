@@ -3,7 +3,7 @@
     <div class="top-nav rsidebar span_1_of_left">
         <h3 class="cate">Danh mục sản phẩm</h3>
         <ul class="menu">
-            @For Each category In Model.Where(Function(x) x.ParentID Is Nothing)
+            @*@For Each category In Model.Where(Function(x) x.ParentID Is Nothing)
                 Dim url = "/" & category.[Alias] & ".pc-" & category.ID & ".html"
                 Dim childCategories = Model.Where(Function(x) x.ParentID = category.ID)
                 @<li>
@@ -24,7 +24,7 @@
                         </ul>
                     End If
                 </li>
-            Next
+            Next*@
         </ul>
     </div>
     <div class="chain-grid menu-chain">

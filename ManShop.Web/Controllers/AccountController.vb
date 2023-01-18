@@ -50,6 +50,7 @@ Namespace ManShop.Web.Controllers
         <HttpPost>
         Public Async Function Login(ByVal model As LoginViewModel, ByVal returnUrl As String) As Task(Of ActionResult)
             If ModelState.IsValid Then
+
                 Dim user As ApplicationUser = _userManager.Find(model.UserName, model.Password)
 
                 If user IsNot Nothing Then
