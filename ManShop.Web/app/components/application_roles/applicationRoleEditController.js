@@ -16,12 +16,12 @@
         }
         function loadDetail() {
             apiService.get('/api/applicationRole/detail/' + $stateParams.id, null,
-            function (result) {
-                $scope.role = result.data;
-            },
-            function (result) {
-                notificationService.displayError(result.data);
-            });
+                function (result) {
+                    $scope.role = result.data;
+                },
+                function (result) {
+                    notificationService.displayError(result.data);
+                });
         }
 
         function addSuccessed() {

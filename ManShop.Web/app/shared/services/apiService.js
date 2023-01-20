@@ -1,7 +1,7 @@
 ﻿(function (app) {
     app.factory('apiService', apiService);
 
-    apiService.$inject = ['$http', 'notificationService','authenticationService'];
+    apiService.$inject = ['$http', 'notificationService', 'authenticationService'];
 
     function apiService($http, notificationService, authenticationService) {
         return {

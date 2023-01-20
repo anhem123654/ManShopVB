@@ -16,12 +16,12 @@
         }
         function loadDetail() {
             apiService.get('/api/applicationUser/detail/' + $stateParams.id, null,
-            function (result) {
-                $scope.account = result.data;
-            },
-            function (result) {
-                notificationService.displayError(result.data);
-            });
+                function (result) {
+                    $scope.account = result.data;
+                },
+                function (result) {
+                    notificationService.displayError(result.data);
+                });
         }
 
         function addSuccessed() {

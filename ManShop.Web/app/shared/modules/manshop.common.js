@@ -1,12 +1,12 @@
 ﻿(function () {
     angular.module('manshop.common',
         ['ui.router',
-         'ngBootbox',
-         'ngCkeditor',
-         'checklist-model',
-         'chart.js',
-         'LocalStorageModule',
-         'ui.select',
-         'ngSanitize'
+            'ngBootbox',
+            'ngCkeditor',
+            'checklist-model',
+            'chart.js',
+            'LocalStorageModule',
+            'ui.select',
+            'ngSanitize'
         ])
 })();

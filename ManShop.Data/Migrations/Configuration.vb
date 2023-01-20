@@ -68,7 +68,7 @@ Namespace ManShop.Data.Migrations
 
                 Dim adminUser = manager.FindByEmail("tedu.international@gmail.com")
 
-                manager.AddToRoles(adminUser.Id, New String() {"Admin", "User"})
+                manager.AddToRoles(adminUser.Id, New String() {"Admin"})
             End If
 
         End Sub

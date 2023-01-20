@@ -1,12 +1,12 @@
 ﻿(function (app) {
     'use strict';
-    app.service('authenticationService', ['$http', '$q', '$window', 'localStorageService','authData',
-    function ($http, $q, $window, localStorageService,authData) {
+    app.service('authenticationService', ['$http', '$q', '$window', 'localStorageService', 'authData',
+        function ($http, $q, $window, localStorageService, authData) {
             var tokenInfo;
 
             this.setTokenInfo = function (data) {
                 tokenInfo = data;
-                localStorageService.set("TokenInfo",JSON.stringify(tokenInfo));
+                localStorageService.set("TokenInfo", JSON.stringify(tokenInfo));
             }
 
             this.getTokenInfo = function () {

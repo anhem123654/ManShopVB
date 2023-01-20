@@ -1,5 +1,5 @@
 ﻿(function () {
-    angular.module('tedushop.application_roles', ['manshop.common']).config(config);
+    angular.module('manshop.application_roles', ['manshop.common']).config(config);
 
     config.$inject = ['$stateProvider', '$urlRouterProvider'];
 

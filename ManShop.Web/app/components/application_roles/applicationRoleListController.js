@@ -71,9 +71,9 @@
                         notificationService.displaySuccess('Đã xóa thành công.');
                         search();
                     },
-                    function () {
-                        notificationService.displayError('Xóa không thành công.');
-                    });
+                        function () {
+                            notificationService.displayError('Xóa không thành công.');
+                        });
                 });
         }
         function search(page) {

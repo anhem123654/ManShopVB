@@ -52,9 +52,9 @@
                 notificationService.displaySuccess(result.data);
                 $state.go('products');
             },
-            function (data, status, headers, config) {
-                notificationService.displayError(data);
-            });
+                function (data, status, headers, config) {
+                    notificationService.displayError(data);
+                });
         }
         function loadProductCategory() {
             apiService.get('api/productcategory/getallparents', null, function (result) {

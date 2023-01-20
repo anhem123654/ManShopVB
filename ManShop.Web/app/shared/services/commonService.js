@@ -5,7 +5,7 @@
     function commonService() {
         return {
             getSeoTitle: getSeoTitle,
-            getTree:getTree
+            getTree: getTree
         }
 
         function getSeoTitle(input) {
