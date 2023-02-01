@@ -15,8 +15,8 @@ Imports Microsoft.Owin.Security.Google
 Imports Microsoft.Owin.Security.OAuth
 Imports Owin
 
-<Assembly: OwinStartup(GetType(TeduShop.Web.App_Start.Startup))>
-Namespace TeduShop.Web.App_Start
+<Assembly: OwinStartup(GetType(ManShop.Web.App_Start.Startup))>
+Namespace ManShop.Web.App_Start
     Partial Public Class Startup
         Public Sub ConfigureAuth(ByVal app As IAppBuilder)
             app.CreatePerOwinContext(AddressOf ManShopDbContext.Create)
