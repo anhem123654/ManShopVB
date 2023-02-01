@@ -124,10 +124,10 @@
     <Compile Include="Infrastructure\RepositoryBase.vb" />
     <Compile Include="Infrastructure\UnitOfWork.vb" />
     <Compile Include="ManShopDbContext.vb" />
-    <Compile Include="Migrations\202301191511088_Initial.designer.vb">
-      <DependentUpon>202301191511088_Initial.vb</DependentUpon>
+    <Compile Include="Migrations\202302010202376_Initial.designer.vb">
+      <DependentUpon>202302010202376_Initial.vb</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\202301191511088_Initial.vb" />
+    <Compile Include="Migrations\202302010202376_Initial.vb" />
     <Compile Include="Migrations\Configuration.vb" />
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
@@ -170,8 +170,8 @@
     <Compile Include="Repositories\VisitorStatisticRepository.vb" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\202301191511088_Initial.resx">
-      <DependentUpon>202301191511088_Initial.vb</DependentUpon>
+    <EmbeddedResource Include="Migrations\202302010202376_Initial.resx">
+      <DependentUpon>202302010202376_Initial.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>

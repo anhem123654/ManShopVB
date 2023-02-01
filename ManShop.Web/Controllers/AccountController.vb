@@ -17,8 +17,8 @@ Namespace ManShop.Web.Controllers
         Private _userManager As ApplicationUserManager
 
         Public Sub New(ByVal userManager As ApplicationUserManager, ByVal signInManager As ApplicationSignInManager)
-            userManager = userManager
-            signInManager = signInManager
+            _userManager = userManager
+            _signInManager = signInManager
         End Sub
 
         Public Property SignInManager As ApplicationSignInManager
@@ -48,11 +48,9 @@ Namespace ManShop.Web.Controllers
         End Function
 
         <HttpPost>
-        Public Async Function Login(ByVal model As LoginViewModel, ByVal returnUrl As String) As Task(Of ActionResult)
+        Public Async Function Login(model As LoginViewModel, returnUrl As String) As Task(Of ActionResult)
             If ModelState.IsValid Then
-
                 Dim user As ApplicationUser = _userManager.Find(model.UserName, model.Password)
-
                 If user IsNot Nothing Then
                     Dim authenticationManager As IAuthenticationManager = HttpContext.GetOwinContext().Authentication
                     authenticationManager.SignOut(DefaultAuthenticationTypes.ExternalCookie)

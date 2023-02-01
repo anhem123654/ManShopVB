@@ -4,6 +4,7 @@ Imports ManShop.Common.ManShop.Common
 Imports ManShop.Data.ManShop.Data
 Imports ManShop.Model.ManShop.Model.Models
 Imports ManShop.Service.ManShop.Service
+Imports ManShop.Web.ManShop.Web.App_Start
 Imports ManShop.Web.ManShop.Web.Infrastructure.Core
 Imports Microsoft.AspNet.Identity
 Imports Microsoft.AspNet.Identity.EntityFramework
